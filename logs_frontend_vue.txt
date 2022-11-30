@@ -1,0 +1,187 @@
+Started by user brruno aguilar
+Running as SYSTEM
+Building remotely on debian in workspace /home/debian/jenkins_slave/workspace/frontend_vue
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/debian/jenkins_slave/workspace/frontend_vue/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jbaguilarr/ProyectoFinal-Vue.git # timeout=10
+Fetching upstream changes from https://github.com/jbaguilarr/ProyectoFinal-Vue.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/jbaguilarr/ProyectoFinal-Vue.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 989161ec7f85c6862ddecf78a08f1a30f3c5d541 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 989161ec7f85c6862ddecf78a08f1a30f3c5d541 # timeout=10
+Commit message: "docker compose"
+ > git rev-list --no-walk 989161ec7f85c6862ddecf78a08f1a30f3c5d541 # timeout=10
+[frontend_vue] $ /bin/sh -xe /tmp/jenkins15899827418165863708.sh
++ docker-compose up -d
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 32B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/node:18-alpine
+#3 DONE 3.8s
+
+#4 [internal] load metadata for docker.io/library/nginx:1.19.0-alpine
+#4 DONE 3.8s
+
+#5 [build 1/6] FROM docker.io/library/node:18-alpine@sha256:9eff44230b2fdcca57a73b8f908c8029e72d24dd05cac5339c79d3dedf6b208b
+#5 resolve docker.io/library/node:18-alpine@sha256:9eff44230b2fdcca57a73b8f908c8029e72d24dd05cac5339c79d3dedf6b208b 0.1s done
+#5 sha256:9eff44230b2fdcca57a73b8f908c8029e72d24dd05cac5339c79d3dedf6b208b 1.43kB / 1.43kB done
+#5 sha256:67373bd5d90ea600cb5f0fa58d7a5a4e6ebf50b6e05c50c1d1cc22df5134db43 1.16kB / 1.16kB done
+#5 sha256:0fa08f92e64b03a1a455b2153a50eac0b8e134ab352dbe751229b978b0e0564f 6.44kB / 6.44kB done
+#5 sha256:ca7dd9ec2225f2385955c43b2379305acd51543c28cf1d4e94522b3d94cce3ce 0B / 2.81MB 0.0s
+#5 ...
+
+#6 [internal] load build context
+#6 transferring context: 1.51MB 0.1s done
+#6 DONE 0.2s
+
+#5 [build 1/6] FROM docker.io/library/node:18-alpine@sha256:9eff44230b2fdcca57a73b8f908c8029e72d24dd05cac5339c79d3dedf6b208b
+#5 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 0B / 46.36MB 0.1s
+#5 sha256:694d6b1b2d1b452b735d925ef7912fe264d4f03c7ef77effed89d76a086dafd1 0B / 2.35MB 0.1s
+#5 sha256:ca7dd9ec2225f2385955c43b2379305acd51543c28cf1d4e94522b3d94cce3ce 1.05MB / 2.81MB 0.3s
+#5 sha256:ca7dd9ec2225f2385955c43b2379305acd51543c28cf1d4e94522b3d94cce3ce 2.81MB / 2.81MB 0.6s done
+#5 extracting sha256:ca7dd9ec2225f2385955c43b2379305acd51543c28cf1d4e94522b3d94cce3ce
+#5 sha256:71f41f5ff77d8eca2e4800eb9001495106991811e45a005c4e59d967d6f40334 0B / 452B 0.7s
+#5 sha256:694d6b1b2d1b452b735d925ef7912fe264d4f03c7ef77effed89d76a086dafd1 294.91kB / 2.35MB 0.9s
+#5 sha256:71f41f5ff77d8eca2e4800eb9001495106991811e45a005c4e59d967d6f40334 452B / 452B 0.8s done
+#5 sha256:694d6b1b2d1b452b735d925ef7912fe264d4f03c7ef77effed89d76a086dafd1 1.05MB / 2.35MB 1.0s
+#5 sha256:694d6b1b2d1b452b735d925ef7912fe264d4f03c7ef77effed89d76a086dafd1 2.35MB / 2.35MB 1.2s done
+#5 extracting sha256:ca7dd9ec2225f2385955c43b2379305acd51543c28cf1d4e94522b3d94cce3ce 0.7s done
+#5 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 3.15MB / 46.36MB 2.0s
+#5 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 6.29MB / 46.36MB 2.7s
+#5 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 9.44MB / 46.36MB 3.3s
+#5 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 12.58MB / 46.36MB 3.9s
+#5 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 15.73MB / 46.36MB 4.6s
+#5 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 18.76MB / 46.36MB 5.3s
+#5 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 22.02MB / 46.36MB 6.0s
+#5 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 25.17MB / 46.36MB 6.4s
+#5 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 28.31MB / 46.36MB 6.8s
+#5 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 31.46MB / 46.36MB 7.3s
+#5 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 34.60MB / 46.36MB 7.8s
+#5 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 37.75MB / 46.36MB 8.2s
+#5 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 40.89MB / 46.36MB 8.7s
+#5 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 44.04MB / 46.36MB 9.1s
+#5 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 46.36MB / 46.36MB 9.5s done
+#5 extracting sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806
+#5 ...
+
+#7 [stage-1 1/2] FROM docker.io/library/nginx:1.19.0-alpine@sha256:17ba9c1ca3dbea0b44f7c890862161c4976f66ebb33e8fdd4452417aebba8e64
+#7 resolve docker.io/library/nginx:1.19.0-alpine@sha256:17ba9c1ca3dbea0b44f7c890862161c4976f66ebb33e8fdd4452417aebba8e64 0.1s done
+#7 sha256:17ba9c1ca3dbea0b44f7c890862161c4976f66ebb33e8fdd4452417aebba8e64 1.65kB / 1.65kB done
+#7 sha256:ee5a9b68e8d4a4b8b48318ff08ad5489bd1ce52b357bf48c511968a302bc347b 1.36kB / 1.36kB done
+#7 sha256:7d0cdcc60a96a5124763fddf5d534d058ad7d0d8d4c3b8be2aefedf4267d0270 8.03kB / 8.03kB done
+#7 sha256:cbdbe7a5bc2a134ca8ec91be58565ec07d037386d1f1d8385412d224deafca08 2.81MB / 2.81MB 2.1s done
+#7 sha256:10c113fb0c778963cb3069e94e8148a3770122f6763c94373e22f5342b503ab0 6.46MB / 6.46MB 4.9s done
+#7 extracting sha256:cbdbe7a5bc2a134ca8ec91be58565ec07d037386d1f1d8385412d224deafca08 0.5s done
+#7 sha256:9ba64393807bf2549af97a1a074ca5fff1bce25ad115b0a7ced446cd1b4305d0 538B / 538B 2.3s done
+#7 sha256:262f9908119d4529a370bcdf1f1306131ad556edf400413d5fa74008d7919931 899B / 899B 2.5s done
+#7 sha256:c4a057508f96954546441044f0d2373303862a4d4accc163e68a4c30d0c88869 668B / 668B 2.7s done
+#7 extracting sha256:10c113fb0c778963cb3069e94e8148a3770122f6763c94373e22f5342b503ab0 1.3s done
+#7 extracting sha256:9ba64393807bf2549af97a1a074ca5fff1bce25ad115b0a7ced446cd1b4305d0 done
+#7 extracting sha256:262f9908119d4529a370bcdf1f1306131ad556edf400413d5fa74008d7919931 done
+#7 extracting sha256:c4a057508f96954546441044f0d2373303862a4d4accc163e68a4c30d0c88869 done
+#7 ...
+
+#5 [build 1/6] FROM docker.io/library/node:18-alpine@sha256:9eff44230b2fdcca57a73b8f908c8029e72d24dd05cac5339c79d3dedf6b208b
+#5 extracting sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 4.0s done
+#5 extracting sha256:694d6b1b2d1b452b735d925ef7912fe264d4f03c7ef77effed89d76a086dafd1
+#5 extracting sha256:694d6b1b2d1b452b735d925ef7912fe264d4f03c7ef77effed89d76a086dafd1 0.3s done
+#5 extracting sha256:71f41f5ff77d8eca2e4800eb9001495106991811e45a005c4e59d967d6f40334 done
+#5 DONE 14.5s
+
+#8 [build 2/6] WORKDIR /app
+#8 DONE 0.2s
+
+#7 [stage-1 1/2] FROM docker.io/library/nginx:1.19.0-alpine@sha256:17ba9c1ca3dbea0b44f7c890862161c4976f66ebb33e8fdd4452417aebba8e64
+#7 ...
+
+#9 [build 3/6] COPY package.json .
+#9 DONE 0.1s
+
+#10 [build 4/6] RUN npm install
+#10 47.87 npm WARN deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+#10 59.46 
+#10 59.46 added 845 packages, and audited 846 packages in 59s
+#10 59.46 
+#10 59.46 91 packages are looking for funding
+#10 59.46   run `npm fund` for details
+#10 59.47 
+#10 59.47 found 0 vulnerabilities
+#10 59.47 npm notice 
+#10 59.47 npm notice New major version of npm available! 8.19.2 -> 9.1.2
+#10 59.47 npm notice Changelog: <https://github.com/npm/cli/releases/tag/v9.1.2>
+#10 59.47 npm notice Run `npm install -g npm@9.1.2` to update!
+#10 59.47 npm notice 
+#10 DONE 59.9s
+
+#7 [stage-1 1/2] FROM docker.io/library/nginx:1.19.0-alpine@sha256:17ba9c1ca3dbea0b44f7c890862161c4976f66ebb33e8fdd4452417aebba8e64
+#7 ...
+
+#11 [build 5/6] COPY . .
+#11 DONE 0.2s
+
+#12 [build 6/6] RUN npm run build
+#12 0.831 
+#12 0.831 > proyecto_final_vue@0.1.0 build
+#12 0.831 > vue-cli-service build
+#12 0.831 
+#12 1.360 All browser targets in the browserslist configuration have supported ES module.
+#12 1.360 Therefore we don't build two separate bundles for differential loading.
+#12 1.360 
+#12 1.405 
+#12 1.412 -  Building for production...
+#12 18.45  DONE  Compiled successfully in 15390ms12:26:01 AM
+#12 18.45 
+#12 18.48   File                                 Size               Gzipped
+#12 18.48 
+#12 18.48   dist/js/chunk-vendors.eba275a2.js    113.66 KiB         40.90 KiB
+#12 18.48   dist/js/app.ce14302a.js              5.98 KiB           2.45 KiB
+#12 18.48   dist/js/321.5776aa9d.js              4.14 KiB           1.45 KiB
+#12 18.48   dist/js/519.a49f8ae1.js              4.04 KiB           1.34 KiB
+#12 18.48   dist/js/633.37761cb0.js              4.01 KiB           1.36 KiB
+#12 18.48   dist/js/731.7cbeca69.js              3.53 KiB           1.36 KiB
+#12 18.48   dist/js/611.df5dd227.js              2.83 KiB           1.07 KiB
+#12 18.48   dist/js/738.77137565.js              2.48 KiB           1.04 KiB
+#12 18.48   dist/js/642.31bcbbf6.js              0.43 KiB           0.32 KiB
+#12 18.48   dist/css/app.48eb9280.css            0.00 KiB           0.02 KiB
+#12 18.48 
+#12 18.48   Images and other types of assets omitted.
+#12 18.48   Build at: 2022-11-30T00:26:01.273Z - Hash: 2a233ca0c8f5bb26 - Time: 15390ms
+#12 18.48 
+#12 18.48  DONE  Build complete. The dist directory is ready to be deployed.
+#12 18.48  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+#12 18.48        
+#12 DONE 18.6s
+
+#7 [stage-1 1/2] FROM docker.io/library/nginx:1.19.0-alpine@sha256:17ba9c1ca3dbea0b44f7c890862161c4976f66ebb33e8fdd4452417aebba8e64
+#7 ...
+
+#13 [stage-1 2/2] COPY --from=build /app/dist /usr/share/nginx/html
+#13 DONE 0.1s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 0.1s done
+#14 writing image sha256:f8f523f42bdcca083b38081c896f8dbfef3b1ebc251ab9b2edcbcedbb9ce5254 done
+#14 naming to docker.io/library/frontend_vue-webappvuejs done
+#14 DONE 0.1s
+
+#7 [stage-1 1/2] FROM docker.io/library/nginx:1.19.0-alpine@sha256:17ba9c1ca3dbea0b44f7c890862161c4976f66ebb33e8fdd4452417aebba8e64
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+Network frontend_vue_default  Creating
+Network frontend_vue_default  Created
+Container frontend_vue-webappvuejs-1  Creating
+Container frontend_vue-webappvuejs-1  Created
+Container frontend_vue-webappvuejs-1  Starting
+Container frontend_vue-webappvuejs-1  Started
+Finished: SUCCESS
